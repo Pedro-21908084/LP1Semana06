@@ -18,6 +18,8 @@ namespace MyGame
         public float GetHealth() => health;
         public float GetShield() => shield;
 
+        public void SetName(string name) =>this.name = name.Trim();
+
         public void TakeDamage(float damage)
         {
             shield -= damage;
