@@ -6,7 +6,11 @@ namespace MyGame
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //variables
+            //ask enemy numbers
+            //create array
+            //ask names of enemys
+            //print names
         }
     }
 }
