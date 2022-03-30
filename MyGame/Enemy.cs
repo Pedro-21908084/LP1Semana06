@@ -2,6 +2,7 @@ namespace MyGame
 {
     public class Enemy
     {
+        private static int totalPowerUpsPickedUp = 0;
         private string name;
         private float health;
         private float shield;
