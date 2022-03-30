@@ -31,6 +31,9 @@ namespace MyGame
             Console.WriteLine($"Health after takedamage: {enemys[0].GetHealth()}");
             enemys[0].PickupPowerUp(PowerUp.Shield, 30.0f);
             Console.WriteLine($"Shield after PickupPowerUp: {enemys[0].GetShield()}");
+            enemys[0].PickupPowerUp(PowerUp.Health, 10.0f);
+            Console.WriteLine($"Health after PickupPowerUp: {enemys[0].GetHealth()}");
+            Console.WriteLine($"Total power ups picked up: {Enemy.GetTotalPickUps()}");
 
             //print names
             Console.Write(enemyNames);
