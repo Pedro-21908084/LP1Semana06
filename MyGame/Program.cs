@@ -9,6 +9,7 @@ namespace MyGame
             //variables
             int enemyNumber;
             Enemy[] enemys;
+            string enemyNames = "";
 
             //ask enemy numbers
             Console.Write("Number of enemys: ");
@@ -22,10 +23,11 @@ namespace MyGame
             {
                 Console.Write($"Name of enemy number {i+1}: ");
                 enemys[i] = new Enemy(Console.ReadLine());
+                enemyNames += enemys[i].GetName() + "\n";
             }
 
             //print names
-            Console.WriteLine($"You chose {enemyNumber} enemys.");
+            Console.Write(enemyNames);
         }
     }
 }
