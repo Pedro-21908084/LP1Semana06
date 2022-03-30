@@ -32,5 +32,10 @@ namespace MyGame
                     health=0;
             }
         }
+
+        public void PickupPowerUp(PowerUp power, float amount)
+        {
+
+        }
     }
 }
