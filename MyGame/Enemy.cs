@@ -2,7 +2,7 @@ namespace MyGame
 {
     public class Enemy
     {
-        private static int totalPickedUp = 0;
+        private static int totalPickedUp;
         private string name;
         private float health;
         private float shield;
@@ -13,6 +13,10 @@ namespace MyGame
             SetName(name);
             health = 100;
             shield = 0;
+        }
+        static Enemy()
+        {
+            totalPickedUp = 0;
         }
 
         public string GetName() => name;
