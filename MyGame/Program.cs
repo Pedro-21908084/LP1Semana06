@@ -37,7 +37,7 @@ namespace MyGame
 
             //print names
             Console.Write(enemyNames);
-            Console.WriteLine("Merci d’utiliser ce programme!");
+            Console.WriteLine("Thank you for using this program!");
         }
     }
 }
