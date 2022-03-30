@@ -9,7 +9,6 @@ namespace MyGame
             //variables
             int enemyNumber;
             Enemy[] enemys;
-            string enemyName, everyName;
 
             //ask enemy numbers
             Console.Write("Number of enemys: ");
@@ -19,6 +18,11 @@ namespace MyGame
             enemys = new Enemy[enemyNumber];
 
             //ask names of enemys
+            for (int i = 0; i < enemyNumber; i++)
+            {
+                Console.Write($"Name of enemy number {i+1}: ");
+                enemys[i] = new Enemy(Console.ReadLine());
+            }
 
             //print names
             Console.WriteLine($"You chose {enemyNumber} enemys.");
