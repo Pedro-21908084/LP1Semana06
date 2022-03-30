@@ -26,6 +26,12 @@ namespace MyGame
                 enemyNames += enemys[i].GetName() + "\n";
             }
 
+            //change values with new methods
+            enemys[0].TakeDamage(20.0f);
+            Console.WriteLine($"Health after takedamage: {enemys[0].GetHealth()}");
+            enemys[0].PickupPowerUp(PowerUp.Shield, 30.0f);
+            Console.WriteLine($"Shield after PickupPowerUp: {enemys[0].GetShield()}");
+
             //print names
             Console.Write(enemyNames);
         }

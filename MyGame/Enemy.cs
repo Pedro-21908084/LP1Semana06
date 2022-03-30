@@ -38,11 +38,11 @@ namespace MyGame
             switch (power)
             {
                 case PowerUp.Health:
-                    health + amount;
+                    health += amount;
                     if(health > 100) health = 100;
                     break;
                 case PowerUp.Shield:
-                    shield + amount;
+                    shield += amount;
                     if(shield > 100) shield = 100;
                     break;
             }
