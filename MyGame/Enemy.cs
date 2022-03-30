@@ -15,8 +15,8 @@ namespace MyGame
         }
 
         public string GetName() => name;
-
         public float GetHealth() => health;
+        public float GetShield() => shield;
 
         public void TakeDamage(float damage)
         {
