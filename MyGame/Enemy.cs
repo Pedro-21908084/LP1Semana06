@@ -52,6 +52,7 @@ namespace MyGame
                     if(shield > 100) shield = 100;
                     break;
             }
+            totalPickedUp++;
         }
     }
 }
