@@ -2,7 +2,7 @@ namespace MyGame
 {
     public class Enemy
     {
-        private static int totalPowerUpsPickedUp = 0;
+        private static int totalPickedUp = 0;
         private string name;
         private float health;
         private float shield;
@@ -18,6 +18,7 @@ namespace MyGame
         public string GetName() => name;
         public float GetHealth() => health;
         public float GetShield() => shield;
+        public static int GetTotalPickUps() => totalPickedUp;
 
         public void SetName(string name) => this.name = name.Trim();
 
